@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "genre": "Sci-Fi, Action",
+      "rating": 8.8,
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "genre": "Action, Crime, Drama",
+      "rating": 9.0,
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Titanic",
+      "year": 1997,
+      "director": "James Cameron",
+      "genre": "Drama, Romance",
+      "rating": 7.8,
+      "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJPTUUxybY2fILEB6wzW_bZN8-OwY5FIvLA&s"
+    },
+    {
+      "id": 4,
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "The Wachowskis",
+      "genre": "Action, Sci-Fi",
+      "rating": 8.7,
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Avatar",
+      "year": 2009,
+      "director": "James Cameron",
+      "genre": "Action, Adventure, Fantasy",
+      "rating": 7.8,
+      "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnMhjRNUPGcToFFbGDcclYcuMMi_UHnJbRcQ&s"
+    },
+    {
+      "id": 6,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "genre": "Drama",
+      "rating": 9.3,
+      "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYJKKZ-tw-mSpk9UObRwn6_C3QtkxFj7-8w&s"
+    },
+    {
+      "id": 7,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "director": "Robert Zemeckis",
+      "genre": "Drama, Romance",
+      "rating": 8.8,
+      "posterUrl": "https://m.media-amazon.com/images/S/pv-target-images/f9ddd832d1b566f5b8dd29a4dbc76b7531c420c8c8d9fdfe94eca128bda8e2b1.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "rating": 8.6,
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Gladiator",
+      "year": 2000,
+      "director": "Ridley Scott",
+      "genre": "Action, Adventure, Drama",
+      "rating": 8.5,
+      "posterUrl": "https://pics.filmaffinity.com/Gladiator-665053087-large.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Lion King",
+      "year": 1994,
+      "director": "Roger Allers, Rob Minkoff",
+      "genre": "Animation, Adventure, Drama",
+      "rating": 8.5,
+      "posterUrl": "https://m.media-amazon.com/images/S/pv-target-images/2c6bf6218aa296881bfba2aa6838a21a8bf768d844ad4522fe9931cdcb7a9f33.jpg"
+    }
+  ]
+  
