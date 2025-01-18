@@ -11,6 +11,7 @@
     width: 96%;
     height: 8%;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .title_movie{
@@ -18,6 +19,18 @@
     width:50%;
     justify-content: center;
     align-items: center;
+}
+
+.carrito{
+    display: flex;
+    border-radius: 5px;
+    height: 80%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .titulo{
@@ -39,14 +52,13 @@
     padding: 5px;
 }
 
-
 .container_movies{
     display: flex;
     gap: 20px;
     padding: 10px;
     width: 98%;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 }
 
 .presentation_movies{
@@ -58,14 +70,33 @@
 
 .movies{
     display: flex;
-    width: 100%;
-    height: 95%;  
+    width: 98%;
+    height: 95%;
+    border-radius: 5px;  
+    border-style: inset;
+    border-color: rgb(180, 146, 146);
 }
 
 .btn_detalles{
+    display: flex;
     cursor: pointer;
     border-radius: 5px;
+    justify-content: center;
+    border-color: rgb(201, 149, 149);
 }
+
 .btn_detalles:hover{
     background-color: rgb(214, 194, 164);
 }
+.carrito-btn {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import useMovieByID from "./hooks/useMovieById"
+import useMovieByID from "../hooks/useMovieById"
 import "./StyleModalMovies.css"
-export default function ModalMovies({ids,close}){
-    
+
+
+export default function ModalMovies({ids,close,carritoCompras}){
     const [infoMovies, setInfoMovies]= useState([])
 
     useEffect(()=>{
@@ -13,8 +14,11 @@ export default function ModalMovies({ids,close}){
             }
             setInfoMovies(res)
         })
-    })
+    },[ids,carritoCompras,close])
 
+   
+    
+    
     return(
 
         <div className="principal">
@@ -32,6 +36,9 @@ export default function ModalMovies({ids,close}){
             <input className="input_modal" value={infoMovies.genre} type="text" placeholder="genre" />
             <label htmlFor="title" className="label_modal">Puntuacion</label>
             <input className="input_modal" value={infoMovies.rating} type="text" placeholder="rating" />
+            <label htmlFor="title" className="label_modal">Precio</label>
+            <input className="input_modal" value={infoMovies.price} type="text" placeholder="price" />
+            <button className="agregarCarrito" onClick={()=>carritoCompras(infoMovies)}>Agregar Al Carrito</button>
             </div>
         </div>
     )

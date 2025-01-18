@@ -10,14 +10,28 @@
     bottom: 5%;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: rgb(73, 14, 14);
+}
+
+.closes_modal{
+    display: flex;
+    position: absolute;
+    left: 96%;
+    bottom:95%;
+    background-color: red;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .title_modal{
     display: flex;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bolder;
 }
 
@@ -37,11 +51,18 @@
     border-radius: 5px;
     border: none;
     background-color: rgba(167, 143, 143, 0.849);
+    font-weight: bolder;
 }
 
-.closes_modal{
+.agregarCarrito{
     display: flex;
-    position: absolute;
-    left: 96%;
-    bottom:95%;
+    background-color: rgba(228, 116, 116, 0.829);
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
 }
+
+  
