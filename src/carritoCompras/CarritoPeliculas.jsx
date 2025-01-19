@@ -1,8 +1,10 @@
 import "./StyleCarritoPeliculas.css"
 
 
-export default function CarritoPeliculas({peliculas,close}){
+export default function CarritoPeliculas({peliculas,close,deleteProduct}){
   const total = peliculas.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+
 
 
     return(
@@ -25,7 +27,11 @@ export default function CarritoPeliculas({peliculas,close}){
                         
                         <div className="hola">
                         <div className="descripcion">{element.title} - ${element.price}  - {element.quantity} 
-                            </div></div></div>
+                                </div>
+                            </div>
+                            <div className="EliminarProducto">
+                            <button className="btn_eliminar" onClick={()=> deleteProduct(element.id)}>X</button> </div>
+                        </div>
                         ))}
                     </div>
                     <h3>Total:  ${total.toFixed(2)} </h3>

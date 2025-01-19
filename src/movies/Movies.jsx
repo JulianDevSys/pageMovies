@@ -9,8 +9,14 @@ export default function Movies(){
     const [traerMovies, setTraerMovies]=useState([])
     const [modal, setModal]=useState([])
     const [search, setSearch]=useState("")
-    const [carritoPelicula, setCarritoPelicula]=useState([])
+    const [carritoPelicula, setCarritoPelicula]=useState(()=>{
+            /* local storage */
+    const saveProducts= localStorage.getItem("carritoPelicula")
+    return saveProducts? JSON.parse(saveProducts):[]
+    })
+
     const [modalCarrito, setModalCarrito]=useState([])
+
     
     useEffect(()=>{
         getMovies((res)=>{
@@ -18,6 +24,11 @@ export default function Movies(){
         })
     },[])    
 
+    /* local storage */
+    useEffect(() => {
+        localStorage.setItem("carritoPelicula", JSON.stringify(carritoPelicula));
+      }, [carritoPelicula]);
+    
     
 
     const save=traerMovies.filter((word)=>word.title.toLowerCase().includes(search.toLowerCase()))
@@ -30,7 +41,10 @@ export default function Movies(){
         }else{
             setCarritoPelicula([...carritoPelicula,{... pelicula, quantity:1}])
         }
-       
+    }
+
+    const deleteProduct=(id)=>{
+        setCarritoPelicula((element)=>element.filter((item)=> item.id !==id))
     }
 
 
@@ -51,7 +65,7 @@ export default function Movies(){
 
             <button
         className="carrito-btn"
-        onClick={() => setModalCarrito(<CarritoPeliculas  peliculas={carritoPelicula} close={()=> setModalCarrito([])} />)
+        onClick={() => setModalCarrito(<CarritoPeliculas  peliculas={carritoPelicula} close={()=> setModalCarrito([])} deleteProduct={ deleteProduct}/>)
         } >
         🛒 
       </button>
