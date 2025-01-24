@@ -3,7 +3,7 @@ import getMovies from "../hooks/getMovies"
 import { useEffect } from "react"
 import ModalMovies from "./ModalMovies"
 import "./StyleMovies.css"
-import CarritoPeliculas from "../carritoCompras/carritoPeliculas"
+import CarritoPeliculas from "../carritoCompras/CarritoPeliculas"
 
 export default function Movies(){
     const [traerMovies, setTraerMovies]=useState([])
